@@ -1,0 +1,58 @@
+version: "2"
+run:
+  tests: false
+linters:
+  default: none
+  enable:
+    - bodyclose
+    - dogsled
+    - dupl
+    - errcheck
+    - gochecknoinits
+    - gocritic
+    - gocyclo
+    - govet
+    - ineffassign
+    - misspell
+    - nakedret
+    - prealloc
+    - revive
+    - staticcheck
+    - unconvert
+    - unparam
+    - unused
+    - whitespace
+  settings:
+    misspell:
+      locale: US
+    revive:
+      rules:
+        - name: exported
+          disabled: true
+  exclusions:
+    generated: lax
+    presets:
+      - comments
+      - common-false-positives
+      - legacy
+      - std-error-handling
+    paths:
+      - testing.go
+      - .*\.pb\.go
+      - .*\.gen\.go
+      - third_party$
+      - builtin$
+      - examples$
+formatters:
+  enable:
+    - gofmt
+    - goimports
+  exclusions:
+    generated: lax
+    paths:
+      - testing.go
+      - .*\.pb\.go
+      - .*\.gen\.go
+      - third_party$
+      - builtin$
+      - examples$
