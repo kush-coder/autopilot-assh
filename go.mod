@@ -10,7 +10,7 @@ require (
 	github.com/docker/libcompose v0.4.0
 	github.com/dustin/go-humanize v1.0.1
 	github.com/flynn/go-shlex v0.0.0-20150515145356-3f9db97f8568
-	github.com/gin-gonic/gin v1.11.0
+	github.com/gin-gonic/gin v1.12.0
 	github.com/haklop/gnotifier v0.0.0-20140909091139-0de36badf601
 	github.com/imdario/mergo v0.3.16
 	github.com/mattn/go-zglob v0.0.4
@@ -81,7 +81,7 @@ require (
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
 	github.com/ugorji/go/codec v1.3.1 // indirect
 	github.com/yusufpapurcu/wmi v1.2.2 // indirect
-	go.uber.org/mock v0.6.0 // indirect
+	go.mongodb.org/mongo-driver/v2 v2.5.0 // indirect
 	go.uber.org/multierr v1.10.0 // indirect
 	go.yaml.in/yaml/v3 v3.0.4 // indirect
 	golang.org/x/arch v0.23.0 // indirect
